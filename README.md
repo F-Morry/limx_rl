@@ -52,6 +52,17 @@ cd limx_rl
 python tron1-rl-deploy-python main.py
 ```
 
-- 控制器训练
+- 控制器训练  
 控制器训练还需建立对应的环境，具体操作方式见逐际动力官方控制器训练教程（本项目在Issacsim4.5 Isaaclab2.0环境下训练）
+```bash
+cd /tron1-rl-isaaclab-main/scripts/rsl_rl
+python train.py --headless --task=Isaac-Limx-WF-Blind-Flat-v0
+#注意无图形化界面必须加入--headless参数避免报错
+#--task=Isaac-Limx-WF-Jumping-v0任务参数必须加，因为参数文件中默认任务为平面站立，任务名称为前面gym注册时所命名的任务
+#其他可选参数 --num_envs 仿真环境个数 --max_iterations 最大迭代轮数默认10000
+```
+训练完成后可以在isaaclab中进行控制器验证以及模型导出
+```bash
+python play.py --task=Isaac-Limx-WF-Blind-Flat-v0 --headless --load_run='.*' --num_env 10
+```
 
