@@ -1,0 +1,14 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/exts/bipedal_locomotion",
+        "${workspaceFolder}/_isaac_lab_source/isaaclab",
+        "${workspaceFolder}/_isaac_lab_source/isaaclab_tasks"
+    ],
+    "cursorpyright.analysis.extraPaths": [
+        "${workspaceFolder}/exts/bipedal_locomotion",
+        "${workspaceFolder}/_isaac_lab_source/isaaclab",
+        "${workspaceFolder}/_isaac_lab_source/isaaclab_tasks"
+    ]
+}
