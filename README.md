@@ -47,8 +47,11 @@ cd limx_rl
 python tron1-mujuco-sim simulator.py
 ```
 - 启动控制器
+```bash
 cd limx_rl
 python tron1-rl-deploy-python main.py
+```
 
 - 控制器训练
-控制器训练还需建立对应的环境，具体操作方式见逐际动力官方控制器训练教程https://github.com/limxdynamics/tron1-rl-isaaclab.git
+控制器训练还需建立对应的环境，具体操作方式见逐际动力官方控制器训练教程（本项目在Issacsim4.5 Isaaclab2.0环境下训练）
+
